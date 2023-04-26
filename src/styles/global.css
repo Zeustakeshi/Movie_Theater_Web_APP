@@ -12,6 +12,7 @@
     --primary-2: #ffb21a;
     --secondary-1: #0056fc;
     --secondary-2: #f62682;
+    --orange-500: #f97316;
 }
 
 *,
@@ -48,4 +49,9 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
 }
