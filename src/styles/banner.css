@@ -1,0 +1,68 @@
+#banner {
+    height: calc(100vh - var(--header-h));
+    width: 100%;
+}
+
+.banner-swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-image: url("https://pops-images-vn.akamaized.net/api/v2/containers/file2/cms_topic/doraemons9_02_sbsmarttv-e73982260c40-1609395345843-63UWkTZR.png?v=0&maxW=1400&format=webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-swiper-slide::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--slate-800);
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+/* CSS swiper-pagination */
+
+.swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.swiper-pagination-bullet {
+    background: var(--gray-5);
+    width: 12px;
+    height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+    position: relative;
+    border: 1px solid var(--orange-500);
+    width: 20px;
+    height: 20px;
+    background: var(--gray-5);
+}
+
+.swiper-pagination-bullet-active::before {
+    content: "";
+    width: 85%;
+    height: 85%;
+    border-radius: 100rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--orange-600);
+}
