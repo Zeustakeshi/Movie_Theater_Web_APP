@@ -13,7 +13,7 @@
     display: block;
     border: 0px;
     font-weight: 700;
-    box-shadow: 0px 0px 14px -7px #f09819;
+    box-shadow: 0px 0px 2px -2px #f09819;
     background-image: linear-gradient(
         90deg,
         #ff512f 0%,
@@ -31,6 +31,7 @@
     /* change the direction of the change here */
     color: #fff;
     text-decoration: none;
+    box-shadow: 0px 0px 20px -2px #f09819;
 }
 
 .button-1:active {

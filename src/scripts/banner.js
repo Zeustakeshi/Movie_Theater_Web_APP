@@ -1,15 +1,8 @@
-const swiper = new Swiper(".banner-swiper", {
-    direction: "vertical",
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    // autoplay: {
-    //     delay: 1000,
-    // },
-});
-
 const bannerItems = [
+    {
+        name: "Thám Tử Lừng Danh Conan: Câu Chuyện Về Haibara Ai ~ Chuyến Tàu Sắt Bí Ẩn Màu Đen ~",
+        imgURL: "https://pops-images-vn.akamaized.net/api/v2/containers/file2/cms_assets/slider_banner_smart_tv___desktop-5c1406504eec-1680598959653-xtBEqkpn.png?v=0&maxW=1400&format=webp",
+    },
     {
         name: "Dragon Quest: Chuyến Phiêu Lưu Của Dai - Tập 56: Trái tim kế thừa",
         imgURL: "https://pops-images-vn.akamaized.net/api/v2/containers/file2/cms_thumbnails/slider_banner_smart_tv___desktop_revised-938239b649a2-1673939360412-1Pun0z1X.png?v=0&maxW=1400&format=webp",
@@ -19,16 +12,8 @@ const bannerItems = [
         imgURL: "https://pops-images-vn.akamaized.net/api/v2/containers/file2/cms_assets/kv_1920x1080_slide-e521a5d9663b-1681206050218-TtPVgH7L.jpg?v=0&maxW=1400&format=webp",
     },
     {
-        name: "Thám Tử Lừng Danh Conan: Câu Chuyện Về Haibara Ai ~ Chuyến Tàu Sắt Bí Ẩn Màu Đen ~",
-        imgURL: "https://pops-images-vn.akamaized.net/api/v2/containers/file2/cms_assets/slider_banner_smart_tv___desktop-5c1406504eec-1680598959653-xtBEqkpn.png?v=0&maxW=1400&format=webp",
-    },
-    {
         name: "",
         imgURL: "https://pops-images-vn.akamaized.net/api/v2/containers/file2/cms_assets/1920x1080_slider-c7b89ee33560-1681288148193-wknxSVi5.jpg?v=0&maxW=1400&format=webp",
-    },
-    {
-        name: "Dragon Quest: Chuyến Phiêu Lưu Của Dai",
-        imgURL: "https://pops-images-vn.akamaized.net/api/v2/containers/file2/cms_topic/slider_banner_smart_tv___desktop-578969fcf053-1671079071111-nGaZVcQY.png?v=0&maxW=1400&format=webp",
     },
     {
         name: "",
@@ -91,3 +76,57 @@ const bannerItems = [
         imgURL: "https://pops-images-vn.akamaized.net/api/v2/containers/file2/cms_topic/series_detail_desktop-19fcb4e05c3e-1662533664564-TVKcxluW.jpg?v=0&maxW=1400&format=webp",
     },
 ];
+
+class Banner {
+    #data;
+    constructor() {
+        this.root = document.querySelector(".banner-swiper-wrapper");
+        this.#data = bannerItems;
+        this.tiemAutoplay = 2000;
+        this.render();
+        this.initSwiper();
+    }
+
+    render() {
+        this.root.insertAdjacentHTML("afterbegin", this.html());
+    }
+
+    update(newData) {
+        this.#data = newData;
+        this.render();
+    }
+
+    initSwiper() {
+        new Swiper(".banner-swiper", {
+            direction: "vertical",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: this.tiemAutoplay,
+            },
+        });
+    }
+
+    html() {
+        return this.#data
+            .map((item) => {
+                return `
+                        <div class="swiper-slide banner-swiper-slide" style = 'background-image: url("${item.imgURL}");'>
+                            <div class="banner-content">
+                                <p class="">${item.name}</p>
+                                <button class="button-1 banner-button-detail">
+                                    CHI TIẾT
+                                </button>
+                            </div>
+                        </div>
+            `;
+            })
+            .join("");
+    }
+}
+
+window.addEventListener("load", () => {
+    const banner = new Banner();
+});

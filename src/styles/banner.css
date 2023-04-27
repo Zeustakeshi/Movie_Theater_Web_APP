@@ -2,6 +2,7 @@
     height: 100vh;
     width: 100%;
     padding: 0 40px;
+    border-radius: 12px;
 }
 
 .banner-swiper {
@@ -25,13 +26,33 @@
 .banner-swiper-slide::before {
     content: "";
     position: absolute;
+    z-index: 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: var(--slate-800);
+    /* background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8),
+        transparent,
+        rgba(0, 0, 0, 0.8)
+    ); */
+    background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.6),
+            transparent,
+            rgba(0, 0, 0, 0.6)
+        ),
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.6),
+            transparent,
+            rgba(0, 0, 0, 0.6)
+        );
+    mask-image: radial-gradient(transparent, transparent, white);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    opacity: 0.4;
 }
 
 /* CSS swiper-pagination */
@@ -68,4 +89,34 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: var(--orange-600);
+}
+
+.banner-content {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    padding-top: 325px;
+    padding-left: 50px;
+}
+
+.banner-content > p {
+    margin: 25px 0;
+    font-size: 32px;
+    color: var(--gray-4);
+    font-weight: 700;
+    max-width: 500px;
+}
+
+.banner-button-detail {
+    margin: 0;
+    padding: 20px 30px;
+    font-size: 25px;
 }
