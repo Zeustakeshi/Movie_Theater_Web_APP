@@ -1,5 +1,6 @@
 :root {
     --white: #fff;
+    --black: #000;
     --gray-1: #111112;
     --gray-2: #adaeaf;
     --gray-3: #eaeaea;
@@ -13,6 +14,9 @@
     --secondary-1: #0056fc;
     --secondary-2: #f62682;
     --orange-500: #f97316;
+    --orange-600: #ea580c;
+    /* SIZE */
+    --header-h: 100px;
 }
 
 /* CSS RESET */
@@ -48,6 +52,12 @@ button {
 body {
     min-height: 100vh;
     font-weight: 500;
+    background: var(--slate-900);
+    /* -ms-overflow-style: none; */
+    /* scrollbar-width: none; */
+}
+body::-webkit-scrollbar {
+    /* display: none; */
 }
 
 a {
@@ -63,4 +73,28 @@ a {
     font-size: 18px;
     font-family: "Poppins", sans-serif;
     color: var(--gray-1);
+}
+
+#body {
+    min-height: 100vh;
+}
+
+/* Không cho người dùng chọn vào phần tử */
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+/* Ẩn Scrollbar */
+.hidden-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.hidden-scrollbar::-webkit-scrollbar {
+    display: none;
 }
