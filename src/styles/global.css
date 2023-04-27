@@ -56,9 +56,9 @@ body {
     /* -ms-overflow-style: none; */
     /* scrollbar-width: none; */
 }
-body::-webkit-scrollbar {
-    /* display: none; */
-}
+/* body::-webkit-scrollbar {
+    display: none;
+} */
 
 a {
     text-decoration: none;
@@ -72,7 +72,7 @@ a {
     margin-right: auto;
     font-size: 18px;
     font-family: "Poppins", sans-serif;
-    color: var(--gray-1);
+    color: var(--white);
 }
 
 #body {
