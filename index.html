@@ -4,8 +4,15 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./src/styles/logo.css" />
-        <link rel="stylesheet" href="./src/styles/global.css" />
+        <!-- FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- ICON -->
         <script
             type="module"
             src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -14,28 +21,198 @@
             nomodule
             src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
         ></script>
-        <title>Pops</title>
+        <link
+            rel="shortcut icon"
+            href="./src/assets/favicon.ico"
+            type="image/x-icon"
+        />
+        <!-- CSS -->
+        <!-- CSS -->
+        <!-- Link Swiper's CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="./src/styles/global.css" />
+        <link rel="stylesheet" href="./src/styles/button.css" />
+        <link rel="stylesheet" href="./src/styles/header.css" />
+        <link rel="stylesheet" href="./src/styles/logo.css" />
+        <link rel="stylesheet" href="./src/styles/banner.css" />
+        <link rel="stylesheet" href="./src/styles/footer.css" />
+        <!-- TITLE -->
+        <title>Xem phim hay, anime, show, truyện tranh online | POPS</title>
     </head>
     <body>
+        <!-- HEADER -->
         <header id="header">
-            <div id="logo" class="header-logo">
-                <a href="/" class="">Logo</a>
-                <ion-icon name="arrow-back-outline"></ion-icon>
-                <ion-icon name="play-outline"></ion-icon>
-            </div>
-            <nav>
-                <div>Trang chủ</div>
-     t           <div>Liên hệ</div>
-                <div>Đăng kí</div>
-                <div>Đăng nhập</div>
-            </nav>
+            <div class="app-container">header</div>
         </header>
+        <!-- BODY -->
+        <div id="body">
+            <!-- BANNER -->
+            <div id="banner">
+                <div class="swiper banner-swiper">
+                    <div class="swiper-wrapper banner-swiper-wrapper"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER -->
         <footer id="footer">
-            <div id="logo">
-                <a href="/">Logo</a>
-                <a href="/">Logo1</a>
-                <a href="/">Logo2</a>
+            <div class="app-container footer-wrapper">
+                <div class="footer-col footer-col-first">
+                    <div id="logo" class="logo-wrapper">
+                        <a href="/" class="logo-link">
+                            <img
+                                class="logo-image"
+                                src="./src/assets/logo-pops.png"
+                                alt=""
+                            />
+                        </a>
+                    </div>
+                    <p class="footer-col-first">
+                        Mạng xã hội chia sẻ các nội dung video giải trí chất
+                        lượng cao, phù hợp mọi độ tuổi và an toàn cho trẻ em.
+                    </p>
+                    <div class="footer-download-group">
+                        <a class="footer-download-item" href="/">
+                            <img src="./src/assets/appstore.png" alt="" />
+                        </a>
+                        <a class="footer-download-item" href="/">
+                            <img src="./src/assets/googleplay.png" alt="" />
+                        </a>
+                        <a class="footer-download-item" href="/">
+                            <img src="./src/assets/smartTV.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-col-top">NỘI DUNG NGƯỜI LỚN</h4>
+                    <div
+                        style="
+                            display: flex;
+                            justify-content: start;
+                            align-items: start;
+                            gap: 20px;
+                        "
+                    >
+                        <div class="footer-col-list">
+                            <div class="footer-col-item">
+                                <a href="/">Trang Chủ</a>
+                            </div>
+                            <div class="footer-col-item">
+                                <a href="/">Truyện Tranh</a>
+                            </div>
+                            <div class="footer-col-item">
+                                <a href="/">Originals</a>
+                            </div>
+                            <div class="footer-col-item">
+                                <a href="/">Anime Show</a>
+                            </div>
+                        </div>
+                        <div class="footer-col-list">
+                            <div class="footer-col-item">
+                                <a href="/">Trang Chủ</a>
+                            </div>
+                            <div class="footer-col-item">
+                                <a href="/">Truyện Tranh</a>
+                            </div>
+                            <div class="footer-col-item">
+                                <a href="/">Originals</a>
+                            </div>
+                            <div class="footer-col-item">
+                                <a href="/">Anime Show</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-col-top">POPS KIDS</h4>
+                    <div class="footer-col-list">
+                        <div class="footer-col-item">
+                            <a href="/">Trang Chủ</a>
+                        </div>
+                        <div class="footer-col-item">
+                            <a href="/">Âm nhạc</a>
+                        </div>
+                        <div class="footer-col-item">
+                            <a href="/">Giải trí</a>
+                        </div>
+                        <div class="footer-col-item">
+                            <a href="/">Giáo dục</a>
+                        </div>
+                        <div class="footer-col-item">
+                            <a href="/">Blog thiếu nhi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-col-top">HỖ TRỢ</h4>
+                    <div class="footer-col-list">
+                        <div class="footer-col-item">
+                            <a href="/">FAQs</a>
+                        </div>
+                        <div class="footer-col-item">
+                            <a href="/">Chính Sách Về Quyền Riêng Tư</a>
+                        </div>
+                        <div class="footer-col-item">
+                            <a href="/">Điều Khoản Và Điều Kiện Sử Dụng</a>
+                        </div>
+                        <div class="footer-col-item">
+                            <a href="/">Điều Khoản Thanh Toán</a>
+                        </div>
+                        <div class="footer-col-item">
+                            <a href="/"
+                                >Chính Sách Và Quy Trình Xử Lý Khiếu Nại
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-col-top">
+                        CÔNG TY CỔ PHẦN PHONG PHÚ SẮC VIỆT
+                    </h4>
+                    <div class="footer-col-list">
+                        <div class="footer-col-item">
+                            Địa chỉ: Tầng 4, Block A, Viettel Complex Tower, 285
+                            Cách Mạng Tháng Tám, Phường 12, Quận 10, Thành phố
+                            Hồ Chí Minh
+                        </div>
+                        <div class="footer-col-item">
+                            Điện thoại: +84 (28) 62921652
+                        </div>
+                        <div class="footer-col-item">
+                            Email: popsapp-support@popsww.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-container footer-wrapper footer-wrapper-bottom">
+                <div>
+                    <p>Người chịu trách nhiệm nội dung: Đinh Thị Hồng Hoa</p>
+                    <p>
+                        Giấy chứng nhận đăng ký kinh doanh số 0305709591 do Sở
+                        Kế hoạch và Đầu tư TP. Hồ Chí Minh cấp ngày 21/05/2008
+                    </p>
+
+                    <p>
+                        Giấy phép thiết lập mạng xã hội số 63/GP-BTTTT cấp bởi
+                        Bộ Thông tin & Truyền thông cấp ngày 22/02/2019
+                    </p>
+
+                    <p>
+                        © 2018 POPS Worldwide. Mọi bản quyền thuộc về POPS
+                        Worldwide.
+                    </p>
+                </div>
+                <div>
+                    <img src="./src/assets/icon-verify.png" alt="verify" />
+                </div>
             </div>
         </footer>
+        <!-- SCRIPT -->
+        <!-- JS FOR BANNER -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="./src/scripts/banner.js" type="module"></script>
     </body>
 </html>

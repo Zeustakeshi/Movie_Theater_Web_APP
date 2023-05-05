@@ -1,0 +1,122 @@
+#banner {
+    height: 100vh;
+    width: 100%;
+    padding: 0 40px;
+    border-radius: 12px;
+}
+
+.banner-swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-image: url("https://pops-images-vn.akamaized.net/api/v2/containers/file2/cms_topic/doraemons9_02_sbsmarttv-e73982260c40-1609395345843-63UWkTZR.png?v=0&maxW=1400&format=webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-swiper-slide::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8),
+        transparent,
+        rgba(0, 0, 0, 0.8)
+    ); */
+    background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.6),
+            transparent,
+            rgba(0, 0, 0, 0.6)
+        ),
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.6),
+            transparent,
+            rgba(0, 0, 0, 0.6)
+        );
+    mask-image: radial-gradient(transparent, transparent, white);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+/* CSS swiper-pagination */
+
+.swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.swiper-pagination-bullet {
+    background: var(--gray-5);
+    width: 12px;
+    height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+    position: relative;
+    border: 1px solid var(--orange-500);
+    width: 20px;
+    height: 20px;
+    background: var(--gray-5);
+}
+
+.swiper-pagination-bullet-active::before {
+    content: "";
+    width: 85%;
+    height: 85%;
+    border-radius: 100rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--orange-600);
+}
+
+.banner-content {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    padding-top: 325px;
+    padding-left: 50px;
+}
+
+.banner-content > p {
+    margin: 25px 0;
+    font-size: 32px;
+    color: var(--gray-4);
+    font-weight: 700;
+    max-width: 500px;
+}
+
+.banner-button-detail {
+    margin: 0;
+    padding: 20px 30px;
+    font-size: 25px;
+}
