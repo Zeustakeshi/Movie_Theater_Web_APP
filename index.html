@@ -38,6 +38,7 @@
         <link rel="stylesheet" href="./src/styles/header.css" />
         <link rel="stylesheet" href="./src/styles/logo.css" />
         <link rel="stylesheet" href="./src/styles/banner.css" />
+        <link rel="stylesheet" href="./src/styles/videoList.css" />
         <link rel="stylesheet" href="./src/styles/footer.css" />
         <!-- TITLE -->
         <title>Xem phim hay, anime, show, truyện tranh online | POPS</title>
@@ -49,9 +50,12 @@
                 <nav id="logo" class="header-bar app-container">
                     <div class="left-header">
                         <div>
-                            <img src="./src/assets/logo-pops.png" alt="logo_pop">
+                            <img
+                                src="./src/assets/logo-pops.png"
+                                alt="logo_pop"
+                            />
                         </div>
-                        <ul style="display: flex;">
+                        <ul style="display: flex">
                             <li><a href="/">Thiếu Nhi</a></li>
                             <li><a href="/">Comics</a></li>
                             <li><a href="/">Anime</a></li>
@@ -63,6 +67,7 @@
                         </ul>
                     </div>
                     <div class="right-header">
+<<<<<<< HEAD
                             <form action="" id="search-bar">
                                 <input type="text" id="search-text">
                                 <button type="button" id="search-button"><ion-icon name="search-outline"></ion-icon></button>
@@ -71,8 +76,26 @@
                         <a href="/" class="sign-in-header">ĐĂNG NHẬP</a>
                         <a href="/" class="sign-up-header">ĐĂNG KÝ</a>
                         <div class="member-icon"><img src="./src/assets/Adult-01.webp" alt="member-icon"></div>
+=======
+                        <div class="search-bar" id="search-bar">
+                            <form action=""><input type="text" /></form>
+                            <button type="button">
+                                <span class="search-icon"
+                                    ><ion-icon name="search-outline"></ion-icon
+                                ></span>
+                            </button>
+                        </div>
+                        <a href="/">ĐĂNG NHẬP</a>
+                        <a href="/">ĐĂNG KÝ</a>
+                        <div class="member-icon">
+                            <img
+                                src="../Movie_Theater_Web_APP/src/assets/Adult-01.webp"
+                                alt="member-icon"
+                            />
+                        </div>
+>>>>>>> f7510664dd3bc81f6aa9773820fe6e76d47efb13
                         <!-- catalog sổ ra khi thu lại khi thu nhỏ, sẽ hiện ra mấy cái option chọn  thiếu nhi, comics,... -->
-                        <div></div> 
+                        <div></div>
                     </div>
                 </nav>
             </div>
@@ -84,6 +107,86 @@
                 <div class="swiper banner-swiper">
                     <div class="swiper-wrapper banner-swiper-wrapper"></div>
                     <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="app-container">
+                <div class="swiper video-list-wrapper">
+                    <h3 class="video-list-title">Hot Series</h3>
+                    <div class="video-list-control">
+                        <button class="swiper-button-prev button-prev button-1">
+                            <!-- <ion-icon name="chevron-back-outline"></ion-icon> -->
+                        </button>
+                        <button class="swiper-button-next button-next button-1">
+                            <!-- <ion-icon name="chevron-forward-outline"></ion-icon> -->
+                        </button>
+                    </div>
+                    <div class="video-list swiper-wrapper">
+                        <div class="video-item swiper-slide">
+                            <div class="video-item-image">
+                                <img
+                                    src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_topic/doraemons9_08_verticalposter_min-a96daebe099b-1678163939648-AFVUE7fY.jpg?v=0&maxW=260&format=webp"
+                                    alt=""
+                                />
+                            </div>
+                            <h4 class="video-item-name">Draemon</h4>
+                        </div>
+                        <div class="video-item swiper-slide">
+                            <div class="video-item-image">
+                                <img
+                                    src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_topic/doraemons9_08_verticalposter_min-a96daebe099b-1678163939648-AFVUE7fY.jpg?v=0&maxW=260&format=webp"
+                                    alt=""
+                                />
+                            </div>
+                            <h4 class="video-item-name">sadaskjDraemon</h4>
+                        </div>
+                    </div>
+                    <div class="video-list swiper-wrapper">
+                        <div class="video-item swiper-slide">
+                            <div class="video-item-image">
+                                <img
+                                    src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_topic/doraemons9_08_verticalposter_min-a96daebe099b-1678163939648-AFVUE7fY.jpg?v=0&maxW=260&format=webp"
+                                    alt=""
+                                />
+                            </div>
+                            <h4 class="video-item-name">Draemon</h4>
+                        </div>
+                        <div class="video-item swiper-slide">
+                            <div class="video-item-image">
+                                <img
+                                    src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_topic/doraemons9_08_verticalposter_min-a96daebe099b-1678163939648-AFVUE7fY.jpg?v=0&maxW=260&format=webp"
+                                    alt=""
+                                />
+                            </div>
+                            <h4 class="video-item-name">sadaskjDraemon3</h4>
+                        </div>
+                        <div class="video-item swiper-slide">
+                            <div class="video-item-image">
+                                <img
+                                    src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_topic/doraemons9_08_verticalposter_min-a96daebe099b-1678163939648-AFVUE7fY.jpg?v=0&maxW=260&format=webp"
+                                    alt=""
+                                />
+                            </div>
+                            <h4 class="video-item-name">sadaskjDraemon3</h4>
+                        </div>
+                        <div class="video-item swiper-slide">
+                            <div class="video-item-image">
+                                <img
+                                    src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_topic/doraemons9_08_verticalposter_min-a96daebe099b-1678163939648-AFVUE7fY.jpg?v=0&maxW=260&format=webp"
+                                    alt=""
+                                />
+                            </div>
+                            <h4 class="video-item-name">sadaskjDraemon3</h4>
+                        </div>
+                        <div class="video-item swiper-slide">
+                            <div class="video-item-image">
+                                <img
+                                    src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_topic/doraemons9_08_verticalposter_min-a96daebe099b-1678163939648-AFVUE7fY.jpg?v=0&maxW=260&format=webp"
+                                    alt=""
+                                />
+                            </div>
+                            <h4 class="video-item-name">sadaskjDraemon3</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -244,5 +347,6 @@
         <!-- JS FOR BANNER -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script src="./src/scripts/banner.js" type="module"></script>
+        <script src="./src/scripts/videoList.js" type="module"></script>
     </body>
 </html>
