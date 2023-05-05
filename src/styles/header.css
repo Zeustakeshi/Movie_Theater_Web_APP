@@ -1,3 +1,46 @@
 #header {
+    background-color: var(--slate-900);
     min-height: var(--header-h);
 }
+.header-bar{   
+    display: flex;
+    z-index: 1000px;
+    position: inherit;  
+    position: fixed;
+    background-color: var(--slate-900);
+    width: 100%;
+    z-index: 40;
+    left: 5%;
+
+}
+
+.right-header,
+.left-header{
+    display: flex;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.left-header img{
+    min-width: 120px;
+    min-height: 30px;
+    background-color: none;
+}
+header .left-header ul li {
+    list-style: none; 
+    display: flex;
+    width: 12.5%;
+    padding: 3px;
+}
+header .left-header ul li a{
+    min-width: max-content;
+    display: block;
+    padding: 9px;
+}
+
+
+
+
