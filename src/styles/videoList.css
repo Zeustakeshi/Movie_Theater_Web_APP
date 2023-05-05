@@ -1,0 +1,50 @@
+.video-list-wraper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.video-list-title {
+    margin: 40px 0;
+}
+
+.video-list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.video-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 8px;
+}
+
+.video-item-image {
+    border-radius: inherit;
+}
+
+.video-item-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-item-name {
+    font-size: 22px;
+}
+
+.video-list-control {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    align-items: center;
+}
+
+.video-list-control > .button-prev,
+.video-list-control > .button-next {
+    padding: 12px 20px;
+}

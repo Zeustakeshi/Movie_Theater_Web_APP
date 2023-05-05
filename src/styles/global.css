@@ -76,7 +76,7 @@ a {
 }
 
 #body {
-    min-height: 100vh;
+    min-height: 300vh;
 }
 
 /* Không cho người dùng chọn vào phần tử */
@@ -102,11 +102,15 @@ a {
 /* Custom h3 */
 h3 {
     position: relative;
-    font-size: 30px;
+    font-size: 50px;
     padding-left: 20px;
     color: var(--white);
     height: 40px;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: max-content;
 }
 h3::before {
     content: "";
