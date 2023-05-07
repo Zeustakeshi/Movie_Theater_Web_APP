@@ -8,8 +8,14 @@ div#body fieldset {
     transform: translate(-50%,-50%);
     border-radius : 10px;
     outline: var(--orange-500) solid 1px;
-    
-    
+    margin-top: 200px;    
+}
+div#anhdau img{
+    width: 220px;
+    height: 60px;
+    padding-left: 80px;
+    padding-top: 10px;
+    position: fixed;
 }
 div#body fieldset h1{
     padding: 50px;
@@ -49,9 +55,30 @@ button#btnPassword.btn.btn-outline-secondary{
     padding-top: 5px;
 }
 div#body fieldset a{
-    font-size: 25px;
-    color: var(--white);
+    font-size: 20px;
+    color: var(--orange-600);
 }
-div#gach{
+div#gach hr{
     background-color: black;
+   width: 30%;
+   height: 5px;
+   margin: auto ;
+}
+div#gach p{
+    color: var(--white);
+    font-size: 20px;
+}
+div a svg{
+    width: 80px;
+    padding: 20px;
+}
+div#final p{
+    color: var(--white);
+    font-size: 20px;
+}
+div#final{
+    padding: 20px;
+}
+body{
+    height: 1px;
 }
